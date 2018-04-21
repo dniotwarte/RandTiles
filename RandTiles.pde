@@ -6,6 +6,7 @@ void setup(){
   orientation(PORTRAIT);
   //size(600, 1100);
   textSize(130);
+  textAlign(CENTER);
   //scale(1,-1);
   
   dlugosc = height / ilepozycji;
@@ -20,6 +21,7 @@ void draw(){
       background(255, 0, 0);
       fill(0);
       text("You Lost", width/2, 200);
+      text(score,  width/2, 350);
       lostF++;
     }else{
       lost=false;
